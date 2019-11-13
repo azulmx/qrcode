@@ -7,7 +7,7 @@
 }
 
 .App-header {
-  background: #282c34 url('https://imcyc.github.io/autoconstruccion/images/bkg.jpg') center center;
+  background: #FFF;
   background-size: cover;
   min-height: 80vh;
   display: flex;
@@ -245,7 +245,7 @@ p{
   width:30%;
 }
 
-input[type=submit] {
+input[type=submit], a.ingresar {
   background: #333333;
   border-radius: 0;
   box-shadow: 0 0 3px #000000;
@@ -255,6 +255,12 @@ input[type=submit] {
   padding: 9px 10px;
   width: 100%;
   transition: all 1s;
+}
+
+a.ingresar {
+  margin-top: 20px;
+  color: #fff;
+  display: block;
 }
 
 button.fadeIn.fourth {

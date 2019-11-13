@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from "react-router-dom";
 import './Home.css';
 
 class Home extends Component {
@@ -24,8 +25,8 @@ class Home extends Component {
           <div className="wrapper fadeInDown">
             <div id="formContent">
                 <div className="fadeIn first">
-                  <h1><span className="azul">SOLUCIONES DE</span><br/><span className="verde">AUTOCONSTRUCCIÓN</span></h1>
-                  <p>Manual para la Autoconstrucción y Mejoramiento de la Construcción</p>
+                  <h1><span className="azul">QUICK RESPONSE</span><br/><span className="verde">GENERADOR DE CÓDIGOS QR</span></h1>
+                  <p>Generador de código QR</p>
                 </div>
                 <form>
                   <input type="text" id="login" className="fadeIn second" name="login" placeholder="USUARIO"/>
@@ -34,7 +35,7 @@ class Home extends Component {
                   <div className="container">
                     <div className="row">
                       <div className="col-xs-6 col-md-6 col-lg-6">
-                        <input type="submit" className="fadeIn fourth" value="INGRESAR"/>
+                        <Link to="/dashboard" className="fadeIn fourth ingresar" value="INGRESAR">INGRESAR</Link>
                       </div>
                       <div className="col-xs-6 col-md-6 col-lg-6">
                         <button onClick={registrarse} className="fadeIn fourth" >REGISTRARSE</button>

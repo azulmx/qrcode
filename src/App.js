@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { HashRouter, BrowserRouter as Router, Route } from "react-router-dom";
 import './App.css';
 import Home from './components/Home';
+import Dashboard from './components/Dashboard';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
 
@@ -31,6 +32,13 @@ class App extends Component {
                   {...props} 
                   registrarse={this.registrarse} 
                   registro={this.state.registro}
+                />}
+              />
+              <Route 
+                exact 
+                path="/dashboard" 
+                component={(props) => <Dashboard
+                  {...props}
                 />}
               />
             </Router>
