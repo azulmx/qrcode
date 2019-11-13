@@ -26,7 +26,7 @@ class Home extends Component {
             <div id="formContent">
                 <div className="fadeIn first">
                   <h1><span className="azul">QUICK RESPONSE</span><br/><span className="verde">GENERADOR DE CÓDIGOS QR</span></h1>
-                  <p>Generador de código QR</p>
+                  <p>PRUEBA DE CÓGIGO WWW.AZUL.MX - Generador de códigos QR</p>
                 </div>
                 <form>
                   <input type="text" id="login" className="fadeIn second" name="login" placeholder="USUARIO"/>
