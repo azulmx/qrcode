@@ -17,7 +17,8 @@ class Header extends Component {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mr-auto">
             <Nav.Link href="/">INICIO</Nav.Link>
-            <Nav.Link href="/">SERVICIOS</Nav.Link>
+            <Nav.Link href="/dashboard">GENERADOR DE CÓDIGO QR</Nav.Link>
+            <Nav.Link href="/ruleta">RULETA DE LA SUERTE</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Navbar>

@@ -3,6 +3,7 @@ import { HashRouter, BrowserRouter as Router, Route } from "react-router-dom";
 import './App.css';
 import Home from './components/Home';
 import Dashboard from './components/Dashboard';
+import Roulette from './components/Roulette';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
 
@@ -19,6 +20,17 @@ class App extends Component {
       registro: !this.state.registro
     })
   }
+  handleOnComplete = (value) => {
+    console.log(value);
+  };
+  
+  options = [
+    "CAFÉ CON LECHE",
+    "SOPA DEL DÍA",
+    "REBANADA DE PIZZA",
+    "UN PAN DE CHOCOLATE",
+    "UNA TAZA DE THÉ",
+  ];
   render() {
     return (
       <HashRouter basename='/'>
@@ -39,6 +51,16 @@ class App extends Component {
                 path="/dashboard" 
                 component={(props) => <Dashboard
                   {...props}
+                />}
+              />
+              <Route 
+                exact 
+                path="/ruleta"
+                component={(props) => <Roulette
+                  {...props}
+                  options={this.options} 
+                  baseSize={300} 
+                  onComplete={this.handleOnComplete}
                 />}
               />
             </Router>
